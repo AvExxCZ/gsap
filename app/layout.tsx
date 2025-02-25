@@ -1,12 +1,13 @@
+import Smooth from "./_modules/Smooth";
 import "./globals.css";
 
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en">
       <body>
-        <main>
+        <Smooth>
           {children}
-        </main>
+        </Smooth>
       </body>
     </html>
   );
